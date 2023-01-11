@@ -1,0 +1,38 @@
+{
+  "name": "2609022_customized_recruitment-static",
+  "version": "1.0.0",
+  "description": "Customized Recruitment corporate website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Vince-M/Vince-M-2609022_Customized_Recruitment-static.git"
+  },
+  "author": "Vince Mendella",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Vince-M/Vince-M-2609022_Customized_Recruitment-static/issues"
+  },
+  "homepage": "https://github.com/Vince-M/Vince-M-2609022_Customized_Recruitment-static#readme",
+  "dependencies": {
+    "@babel/core": "^7.17.9",
+    "@babel/preset-env": "^7.20.2",
+    "autoprefixer": "^10.4.13",
+    "browser-sync": "^2.27.11",
+    "cssnano": "^5.1.14",
+    "gulp": "^4.0.2",
+    "gulp-babel": "^8.0.0",
+    "gulp-postcss": "^9.0.1",
+    "gulp-sass": "^5.1.0",
+    "gulp-terser": "^2.1.0",
+    "postcss": "^8.4.12",
+    "sass": "^1.50.0"
+  },
+
+"overrides": {
+"chokidar": "3.5.3",
+"glob-parent": "6.0.2"
+}
+}

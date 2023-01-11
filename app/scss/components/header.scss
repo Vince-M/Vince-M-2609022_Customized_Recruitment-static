@@ -1,0 +1,65 @@
+@use '../util' as *;
+
+.header {
+  background-color: var(--white);
+
+  @include breakpoint-down (small) {
+    height: rem(90);
+  }
+
+  .hamburger {
+
+    @include breakpoint-up (large) {
+      visibility: hidden;
+    }
+  }
+
+  // Hamburger open styles
+  &.open {
+    
+    .header__toggle {
+      > span:first-child {
+        transform: rotate(45deg);
+      }
+
+      > span:nth-child(2) {
+        opacity: 0;
+      }
+
+      > span:last-child {
+        transform: rotate(-45deg);
+      }
+    }
+  }
+
+  .overlay {
+    opacity: 0;
+    top: rem(90);
+    right: 0;
+    bottom: 0;
+    left: 0;
+    // background-color: var()
+    z-index: 999;
+
+    @include breakpoint-up (medium) {
+      top: rem(110);
+    }
+
+    @include breakpoint-down (small) {
+      position: absolute;
+    }
+  }
+
+  &__logo {
+    height: rem(83);
+    padding-top: rem(10);
+    display: block;
+
+    & img {
+
+      @include breakpoint-down (small) {
+        width: 100%;
+      }
+    }
+  }
+}
