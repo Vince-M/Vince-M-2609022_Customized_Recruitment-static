@@ -1,1 +1,25 @@
 @use '../util' as *;
+
+// BUTTONS
+.btn {
+  &__contact a {
+    padding: rem(8) rem(20);
+    background-color: var(--white);
+    border: rem(1) solid var(--darkGrey);
+    color: var(--darkGrey);
+    border-radius: 0;
+    margin-left: rem(30);
+    cursor: pointer;
+
+    @include breakpoint-down(medium) {
+      margin-left: 0;
+    }
+
+    &:hover {
+      background-color: var(--corpRed);
+      border: rem(1) solid var(--darkGrey);
+      color: var(--white);
+      transition: color 350ms ease-in-out;
+    }
+  }
+}
