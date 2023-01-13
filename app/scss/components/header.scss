@@ -1,7 +1,13 @@
 @use '../util' as *;
 
 .header {
-  background-color: var(--white);
+  background-color: var(--white80);
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  width: 100%;
+  z-index: 999;
 
   @include breakpoint-down (small) {
     height: rem(90);
@@ -90,8 +96,8 @@
     text-transform: uppercase;
     text-decoration: none;
     font-family: var(--font-heading);
-    font-size: rem(18);
-    font-weight: 700;
+    font-size: rem(17);
+    font-weight: 500;
 
     @include breakpoint-down(medium) {
       margin-top: rem(20);
@@ -121,7 +127,6 @@
     margin: 0;
     justify-content: flex-end;
     align-items: center;
-    background-color: var(--white);
     width: 100%;
     height: auto;
     text-align: center;

@@ -1,1 +1,68 @@
 @use '../util' as *;
+
+.frontPage {
+
+  &__hero {
+    background-image: url(/img/index-handsIn_1920x1080.jpg);
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;
+    left: 50%;
+    transform: translateX(-50%);
+    position: relative;
+    margin: 0;
+    height: 100vh;
+    overflow: hidden;
+    clear: both;
+
+    @include breakpoint-down(medium) {
+      background-position: 75% top;
+      background-color: black;
+    }
+
+    &--headline {
+      display: flex;
+      align-items: flex-start;
+      flex-direction: column;
+      position: absolute;
+      top: 40%;
+      left: 20%;
+      z-index: 900;
+      width: 100%;
+
+      @include breakpoint-down(medium) {
+        left: 10%;
+      }
+
+      h1,
+      h2 {
+        color: var(--white);
+        text-shadow: 0 0 rem(7) var(--black);
+      }
+      
+
+      h1 {
+        font-size: rem(40);
+        margin-bottom: rem(30);
+        width: 40%;
+
+        @include breakpoint-down(medium) {
+          width: 80%;
+        }
+
+      }
+
+      h2 {
+        font-size: rem(28);
+
+        margin-bottom: rem(25);
+        width: 30%;
+
+        @include breakpoint-down(medium) {
+          width: 80%;
+        }
+
+      }
+    }
+  }
+}
