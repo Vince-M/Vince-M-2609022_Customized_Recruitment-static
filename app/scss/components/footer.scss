@@ -1,1 +1,33 @@
 @use '../util' as *;
+
+/* Footer
+/* -------------------------------------*/
+.footer {
+  height: auto;
+  background-color: var(--lightGrey);
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: rem(30) 0;
+
+  &__identity,
+  &__menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+
+    &--item {
+      margin: 0 0 0 rem(24);
+    }
+  }
+
+}
