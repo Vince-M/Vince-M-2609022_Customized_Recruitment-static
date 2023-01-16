@@ -4,10 +4,25 @@
 
   &__width {
 
-
     &--about {
       background-color: var(--corpRed);
       margin-bottom: rem(40);
+    }
+
+    &--recruiting {
+
+    }
+
+    &--connect {
+      background-image: url('/img/lets_connect_bkgd_1920x300.jpg');
+      background-repeat: no-repeat;
+      background-position: center center;
+      width: cover;
+      height: rem(400);
+      overflow: hidden;
+      display: flex;
+      justify-content: center;
+      align-items: center;
     }
   }
 }
@@ -23,6 +38,11 @@
     padding: 0;
     position: relative;
     width: 100%;
+    height: rem(300);
+
+    @include breakpoint-down(medium) {
+      height: auto;
+    }
 
     @include breakpoint-down(small) {
       flex-direction: column;
@@ -36,14 +56,22 @@
       @include breakpoint-down(small) {
         width: 100%;
         margin-bottom: rem(20);
+        overflow: hidden;
       }
     }
 
     &--img {
+      flex: 1;
+      height: rem(300);
+      overflow: hidden;
+
+      @include breakpoint-down(medium) {
+        height: auto;
+      }
 
       img {
-        overflow: hidden;
-        height: auto;
+        width: 100%;
+        display: block;
       }
     }
 
@@ -51,9 +79,11 @@
       color: var(--white);
       font-weight: 500;
       padding: 0 rem(20);
+      width: 50%;
 
       @include breakpoint-down(small) {
         padding: 0 rem(15);
+        width: 100%;
       }
 
       h2 {
@@ -61,12 +91,12 @@
         margin-bottom: rem(8);
 
         @include breakpoint-down(small) {
-          font-size: 28;
+          font-size: 24;
         }
       }
 
       p {
-        font-size: rem(22);
+        font-size: rem(20);
         line-height: 1;
 
         @include breakpoint-down(small) {
@@ -84,20 +114,49 @@
     flex-direction: row;
     flex-wrap: wrap;
     padding: 0;
+    margin-bottom: rem(40);
     position: relative;
     width: 100%;
+
+    @include breakpoint-down(medium) {
+      height: auto;
+    }
 
     @include breakpoint-down(small) {
       flex-direction: column;
       height: auto;
     }
 
+    &--img {
+      flex: 1;
+      overflow: hidden;
+      box-shadow: 0 0 rem(10) var(--black);
+
+      @include breakpoint-down(medium) {
+        height: auto;
+      }
+
+      @include breakpoint-down(small) {
+        order: 1;
+        margin-bottom: rem(20);
+      }
+
+      img {
+        width: 100%;
+        overflow: hidden;
+        display: block;
+      }
+    }
+
     &--text {
       font-weight: 500;
       padding: 0 rem(20);
+      width: 44%;
 
       @include breakpoint-down(small) {
         padding: 0 rem(15);
+        width: 100%;
+        order: 2;
       }
 
       h2 {
@@ -113,7 +172,8 @@
       p {
         color: var(--textGrey);
         font-size: rem(22);
-        line-height: 1;
+        line-height: 1.3;
+        width: 80%;
 
         @include breakpoint-down(small) {
           font-size: rem(18);
@@ -122,4 +182,26 @@
     }
   }
 
+
+
+}
+
+.page {
+
+  &__connect {
+    background-color: var(--corpRed80);
+    height: rem(200);
+    border: rem(10) solid var(--white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    h2 {
+      font-size: rem(36);
+      color: var(--white);
+      text-transform: uppercase;
+      font-weight: 500;
+    }
+  }
 }
