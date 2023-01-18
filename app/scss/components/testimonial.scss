@@ -1,0 +1,17 @@
+@use '../util' as *;
+
+.testimonial {
+  border: 0 rem(1) solid var(--midGrey);
+  border-top: rem(10) solid var(--corpRed);
+  padding: rem(20);
+
+  &__logo {
+    margin-bottom: rem(15);
+  }
+
+  &:hover {
+    box-shadow: 0 0 rem(20) var(--corpRed);
+    border: 0;
+    border-top: rem(10) solid var(--corpRed);
+  }
+}
