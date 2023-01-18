@@ -59,8 +59,9 @@
 
   &__logo {
     height: rem(83);
-    padding-top: rem(10);
-    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
     & img {
 
@@ -99,6 +100,7 @@
     font-family: var(--font-heading);
     font-size: rem(17);
     font-weight: 500;
+    letter-spacing: rem(1);
 
     @include breakpoint-down(medium) {
       margin-top: rem(20);
