@@ -112,6 +112,7 @@
       p {
         font-size: rem(20);
         line-height: 1;
+        margin-bottom: rem(30);
 
         @include breakpoint-down(small) {
           font-size: rem(18);
@@ -187,6 +188,7 @@
         font-size: rem(22);
         line-height: 1.3;
         width: 80%;
+        margin-bottom: rem(30);
 
         @include breakpoint-down(small) {
           font-size: rem(18);
@@ -241,14 +243,14 @@
         line-height: 1.3;
       }
 
-      a {
-        color: var(--corpRed);
-      }
+      // a {
+      //   color: var(--corpRed);
+      // }
 
-      a:hover {
-        color: var(--darkGrey);
-        text-decoration: underline;
-      }
+      // a:hover {
+      //   color: var(--darkGrey);
+      //   text-decoration: underline;
+      // }
     }
 
     &--testimonial {

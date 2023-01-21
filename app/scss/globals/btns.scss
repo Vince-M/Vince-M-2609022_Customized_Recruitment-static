@@ -2,14 +2,29 @@
 
 // BUTTONS
 .btn {
-  &__contact a {
+
+  a {
+    text-transform: uppercase;
     padding: rem(8) rem(20);
+    border-radius: 0;
+    cursor: pointer;
+
+    &:hover {
+      text-decoration: none;
+      transition: color 350ms ease-in-out;
+    }
+  }
+
+  &__navContact {
+    margin-left: rem(35);
+  }
+  
+  &__contact a,
+  &__navContact a {
     background-color: var(--white);
     border: rem(1) solid var(--darkGrey);
     color: var(--darkGrey);
-    border-radius: 0;
-    margin-left: rem(30);
-    cursor: pointer;
+
 
     @include breakpoint-down(medium) {
       margin-left: 0;
@@ -19,6 +34,33 @@
       background-color: var(--corpRed);
       border: rem(1) solid var(--darkGrey);
       color: var(--white);
+      text-decoration: none;
+      transition: color 350ms ease-in-out;
+    }
+  }
+
+  &__recruiting a {
+    background-color: var(--corpRed);
+    border: rem(1) solid var(--white);
+    color: var(--white);
+
+    &:hover {
+      background-color: var(--white);
+      border: rem(1) solid var(--darkGrey);
+      color: var(--corpRed);
+    }
+  }
+
+  &__about a {
+    background-color: var(--white);
+    border: rem(1) solid var(--darkGrey);
+    color: var(--darkGrey);
+
+    &:hover {
+      background-color: var(--darkGrey);
+      border: rem(1) solid var(--darkGrey);
+      color: var(--white);
+      text-decoration: none;
       transition: color 350ms ease-in-out;
     }
   }

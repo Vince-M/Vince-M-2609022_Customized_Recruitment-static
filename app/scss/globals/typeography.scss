@@ -13,3 +13,14 @@ a:visited,
 a:active {
   text-decoration: none;
 }
+
+a {
+  color: var(--link);
+  cursor: pointer;
+
+  &:hover {
+    color: var(--linkHover);
+    text-decoration: underline;
+    transition: all .3s ease-in-out;
+  }
+}

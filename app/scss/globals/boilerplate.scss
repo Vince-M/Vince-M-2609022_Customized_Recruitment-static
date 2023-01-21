@@ -173,6 +173,16 @@ a:hover {
   }
 }
 
+.readMore {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin: rem(15) 0 0;
+  // padding: rem(4) rem(5) rem(4) 0;
+  // border-top: rem(1) solid var(--midGrey);
+  // border-bottom: rem(1) solid var(--midGrey);
+}
+
 .contact {
 
   &__section {
@@ -185,24 +195,56 @@ a:hover {
     &--content {
       display: flex;
       flex-direction: row;
-      justify-content: space-around;
+      justify-content: center;
       align-items: center;
-      gap: rem(40);
-      width: 50%;
+      width: 100%;
 
       @include breakpoint-down(small) {
         flex-direction: column;
       }
     }
 
+    &--img {
+      display: flex;
+      justify-content: flex-end;
+      width: 50%;
+      padding-right: rem(20);
+
+      @include breakpoint-down(small) {
+        justify-content: center;
+        padding: 0;
+        width: 100%;
+        margin-bottom: rem(20);
+      }
+    }
+
     &--text {
-      width: 60%;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      flex-direction: column;
+      width: 50%;
+      margin-left: rem(20);
+
+      @include breakpoint-down(small) {
+        align-items: center;
+        width: 100%;
+        margin-left: 0;
+      }
       
       p {
         font-family: var(--font-text);
         font-size: rem(22);
         font-weight: 700;
+        text-align: left;
         color: var(--textGrey);
+        margin-bottom: rem(30);
+        width: 60%;
+
+        @include breakpoint-down(small) {
+          text-align: center;
+          width: 80%;
+        }
       }
     }
   }
