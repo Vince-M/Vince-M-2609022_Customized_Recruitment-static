@@ -164,3 +164,55 @@ a:hover {
     }
   }
 }
+
+.section {
+
+  &__divider {
+    margin-bottom: rem(80);
+
+  }
+}
+
+.contact {
+
+  &__section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: rem(80);
+    flex-direction: row;
+
+    &--content {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: center;
+      gap: rem(40);
+      width: 50%;
+
+      @include breakpoint-down(small) {
+        flex-direction: column;
+      }
+    }
+
+    &--text {
+      width: 60%;
+      
+      p {
+        font-family: var(--font-text);
+        font-size: rem(22);
+        font-weight: 700;
+        color: var(--textGrey);
+      }
+    }
+  }
+
+  &__us {
+
+    &--img {
+      border-radius: 50%;
+      border: rem(5) solid var(--midGrey);
+      // margin-right: rem(10);
+    }
+  }
+}

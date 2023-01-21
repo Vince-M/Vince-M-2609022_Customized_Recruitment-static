@@ -203,10 +203,11 @@
 
     h3 {
       font-family: var(--font-heading);
-      font-size: rem(52);
+      font-size: rem(48);
       font-weight: 700;
       letter-spacing: rem(2);
       color: var(--white);
+      text-transform: uppercase;
       text-shadow: rem(3) rem(3) rem(5) var(--black);
 
       @include breakpoint-down(small) {
@@ -215,7 +216,7 @@
     }
 
     &--section {
-      margin-bottom: rem(100);
+      margin-bottom: rem(80);
     }
 
     &--testimonial {
@@ -227,6 +228,10 @@
 
     &--testimonialSingle {
       padding: rem(30);
+
+      @include breakpoint-down(medium) {
+        padding: 0 rem(10) rem(30);
+      }
 
       p {
         font-family: var(--font-text);
@@ -274,3 +279,15 @@
     }
   }
 }
+
+.index__input {
+  padding: rem(10);
+}
+
+input::placeholder { 
+    font-family: var(--font-heading);
+    font-size: rem(26);
+    color: var(--midGrey);
+    font-weight: 500;
+    padding: rem(10);
+  }

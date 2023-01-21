@@ -13,5 +13,33 @@
     box-shadow: 0 0 rem(20) var(--corpRed);
     border: 0;
     border-top: rem(10) solid var(--corpRed);
+    transition: all 300ms ease-in-out;
+  }
+}
+
+.testimonials {
+
+  &__all {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: rem(30);
+
+    @include breakpoint-down(medium) {
+      padding-right: rem(20);
+    }
+
+    p a {
+      font-family: var(--font-text);
+      font-size: rem(14);
+      color: var(--corpRed);
+      text-transform: uppercase;
+      cursor: pointer;
+
+      &:hover {
+        text-decoration: underline;
+        color: var(--linkHover);
+      }
+    }
   }
 }
