@@ -33,10 +33,12 @@
       @include breakpoint-down(medium) {
         left: 10%;
         right: 5%;
-        width: 80%
+        width: 80%;
+        align-items: flex-start;
       }
 
       @include breakpoint-down(small) {
+        align-items: center;
         top: 25%;
         text-align: center;
         left: 5%;

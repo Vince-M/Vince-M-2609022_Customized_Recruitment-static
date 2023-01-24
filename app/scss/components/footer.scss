@@ -59,6 +59,10 @@
     align-items: center;
     flex-direction: row;
 
+    @include breakpoint-down(small) {
+      flex-direction: column;
+    }
+
     &--privacy {
       font-size: rem(14);
       margin-right: rem(20);
@@ -81,6 +85,15 @@
     &--copyright {
       font-size: rem(14);
       margin-left: rem(20);
+    }
+
+    &--privacy,
+    &--social,
+    &--copyright {
+
+      @include breakpoint-down(small) {
+        margin: 0 0 rem(20) 0;
+      }
     }
   }
 

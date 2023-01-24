@@ -85,6 +85,7 @@
 
       img {
         width: 100%;
+        height: 100%;
         display: block;
       }
     }
@@ -104,8 +105,8 @@
         font-size: rem(36);
         margin-bottom: rem(8);
 
-        @include breakpoint-down(small) {
-          font-size: 24;
+        @include breakpoint-down(medium) {
+          font-size: rem(26);
         }
       }
 
@@ -168,7 +169,7 @@
       width: 44%;
 
       @include breakpoint-down(small) {
-        padding: 0 rem(15);
+        padding: 0 rem(20);
         width: 100%;
         order: 2;
       }
@@ -178,14 +179,14 @@
         font-size: rem(36);
         margin-bottom: rem(8);
 
-        @include breakpoint-down(small) {
-          font-size: 28;
+        @include breakpoint-down(medium) {
+          font-size: rem(26);
         }
       }
 
       p {
         color: var(--textGrey);
-        font-size: rem(22);
+        font-size: rem(18);
         line-height: 1.3;
         width: 80%;
         margin-bottom: rem(30);
