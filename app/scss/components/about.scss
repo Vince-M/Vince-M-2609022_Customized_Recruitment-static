@@ -1,0 +1,38 @@
+@use '../util' as *;
+
+.about {
+
+  &__intro {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: row;
+    gap: rem(20);
+    margin-bottom: rem(80);
+
+    @include breakpoint-down(small) {
+      flex-direction: column;
+    }
+
+    &--img,
+    &--text {
+      flex: 1 0 45%;
+    }
+
+    &--img {
+      padding-right: rem(10);
+    }
+
+    &--bold {
+      font-size: rem(20);
+      line-height: 1.4;
+      color: var(--darkGrey);
+    }
+
+    &--text {
+      padding-left: rem(10);
+      padding-right: rem(10);
+    }
+
+  }
+}
