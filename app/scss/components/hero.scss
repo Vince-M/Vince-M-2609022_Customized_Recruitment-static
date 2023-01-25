@@ -87,3 +87,35 @@
     }
   }
 }
+
+.pageBanner {
+  background-image: url(/img/about_hero_1920x500.jpg);
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
+  left: 49%;
+  transform: translateX(-49%);
+  position: relative;
+  margin: 0 0 rem(80) 0;
+  height: rem(300);
+  overflow: hidden;
+  clear: both;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+
+  h1 {
+    font-family: var(--font-heading);
+    font-size: rem(52);
+    font-weight: 900;
+    color: var(--white);
+    text-shadow: 0 0 rem(5) var(--black);
+    padding-left: rem(20);
+    margin-bottom: rem(10);
+    text-transform: uppercase;
+
+    @include breakpoint-down(small) {
+      font-size: rem(44);
+    }
+  }
+}
