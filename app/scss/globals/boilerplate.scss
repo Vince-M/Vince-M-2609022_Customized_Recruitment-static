@@ -18,6 +18,8 @@ body {
   background-color: var(--white);
 }
 
+
+
 .container-lg {
   width: 80%;
   max-width: rem(1400);
@@ -28,6 +30,12 @@ body {
     position: relative;
     // padding: 0 rem(20) 0 rem(20);
   }
+}
+
+.container-blogText {
+  width: 80%;
+  max-width: rem(768);
+  margin:0 auto;
 }
 
 

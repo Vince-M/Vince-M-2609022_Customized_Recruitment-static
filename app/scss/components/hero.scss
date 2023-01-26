@@ -89,7 +89,7 @@
 }
 
 .pageBanner {
-  background-image: url(/img/about_hero_1920x500.jpg);
+  
   background-repeat: no-repeat;
   background-position: center top;
   background-size: cover;
@@ -103,6 +103,14 @@
   display: flex;
   justify-content: flex-start;
   align-items: flex-end;
+
+  &--about {
+    background-image: url(/img/hero_about_1920x500.jpg);
+  }
+
+  &--testimonial {
+    background-image: url(/img/hero_testimonial_1920x500.jpg);
+  }
 
   h1 {
     font-family: var(--font-heading);
