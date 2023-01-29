@@ -14,7 +14,7 @@
     }
 
     &--connect {
-      background-image: url('/img/lets_connect_bkgd_1920x300.jpg');
+      background-image: url('../img/lets_connect_bkgd_1920x300.jpg');
       background-repeat: no-repeat;
       background-position: center center;
       width: cover;
@@ -27,7 +27,7 @@
     }
 
     &--testimonials {
-      background-image: url('/img/index_testimonials_1920x350.jpg');
+      background-image: url('../img/index_testimonials_1920x350.jpg');
       background-repeat: no-repeat;
       background-position: center center;
       width: cover;
@@ -220,7 +220,7 @@
     }
 
     &--section {
-      margin-bottom: rem(80);
+      margin-bottom: rem(45);
     }
 
     &--testimonial {

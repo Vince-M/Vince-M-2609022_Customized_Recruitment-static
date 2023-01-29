@@ -17,6 +17,10 @@
 
   &__navContact {
     margin-left: rem(35);
+
+    @include breakpoint-down(medium) {
+      margin-left: 0;
+    }
   }
 
   &__contact a,

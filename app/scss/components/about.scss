@@ -43,9 +43,20 @@
     flex-direction: row;
     margin-bottom: rem(20);
 
+    @include breakpoint-down(small) {
+      flex-direction: column;
+    }
+
     &--images,
     &--text {
       flex: 1 0 40%;
+    }
+
+    &--images {
+
+      @include breakpoint-down(small) {
+        order: 2;
+      }
     }
 
     &--text {
@@ -83,6 +94,11 @@
   width: 95%;
   padding: 0;
   overflow: hidden;
+
+  @include breakpoint-down(small) {
+    width: 100%;
+    gap: rem(10);
+  }
 }
 
 .clientImage {

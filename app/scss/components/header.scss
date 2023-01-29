@@ -10,9 +10,9 @@
   box-shadow: 0 0 rem(10) var(--black);
   z-index: 999;
 
-  // @include breakpoint-down (small) {
-  //   height: rem(90);
-  // }
+  @include breakpoint-down (medium) {
+    background-color: var(--white);
+  }
 
   .hamburger {
 
@@ -148,7 +148,7 @@
     &--open {
       position: absolute;
       display: block;
-      background-color: white;
+      background-color: var(--white);
       width: calc(100% - rem(48));
       left: 50%;
       transform: translate(-50%);
@@ -157,7 +157,7 @@
       top: rem(90);
       padding: rem(20) 0 rem(40) 0;
       z-index: 999;
-      margin: 0 auto;
+      margin: rem(23) auto 0;
       border-radius: 0 0 rem(5) rem(5);
 
       @include breakpoint-down(medium) {
@@ -165,7 +165,7 @@
       }
 
       @include breakpoint-down(small) {
-        top: rem(72);
+        top: rem(50);
       }
     }
   }

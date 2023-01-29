@@ -4,7 +4,9 @@ const btnHamburger = document.querySelector('#btnHamburger');
 const body = document.querySelector('body');
 const header = document.querySelector('.header');
 const overlay = document.querySelector('.overlay');
+const mobileMenu = document.querySelector('.mobileMenu');
 const nav__list = document.querySelector('.nav__list');
+const nav__item = document.querySelector('.nav__item');
 const mobile__fade = document.querySelector('.mobile__fade');
 
 btnHamburger.addEventListener('click', function() {

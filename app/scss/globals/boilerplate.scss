@@ -177,6 +177,10 @@ a:hover {
     height: rem(100);
     background-color: var(--corpRed);
     margin-bottom: rem(80);
+
+    @include breakpoint-down(small) {
+      margin-bottom: rem(40);
+    }
   }
 }
 
