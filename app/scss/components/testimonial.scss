@@ -48,6 +48,16 @@
       margin-bottom: rem(20);
     }
   }
+
+  &__intro {
+    margin-bottom: rem(80);
+  
+    &--bold p {
+      font-size: rem(20);
+      line-height: 1.4;
+      color: var(--darkGrey);
+    }
+  }
 }
 
 .testimonials {
@@ -92,8 +102,4 @@
     }
 
   }
-}
-
-.testimonial__intro {
-  margin-bottom: rem(80);
 }

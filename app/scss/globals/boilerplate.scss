@@ -19,7 +19,8 @@ body {
 }
 
 
-
+/* CONTAINERS
+/* -------------------------------------*/
 .container-lg {
   width: 80%;
   max-width: rem(1400);
@@ -50,6 +51,8 @@ body {
     padding: 0 rem(10) 0 rem(10);
   }
 }
+
+/* -------------------------------------*/
 
 .row {
   padding: 0 rem(10);
