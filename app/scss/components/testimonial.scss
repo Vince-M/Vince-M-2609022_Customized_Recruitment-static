@@ -51,6 +51,10 @@
 
   &__intro {
     margin-bottom: rem(80);
+
+    &--bold {
+      margin-bottom: rem(60);
+    }
   
     &--bold p {
       font-size: rem(20);

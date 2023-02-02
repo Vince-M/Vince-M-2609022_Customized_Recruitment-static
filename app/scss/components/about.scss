@@ -45,11 +45,20 @@
 
     @include breakpoint-down(small) {
       flex-direction: column;
+      margin-bottom: rem(60);
     }
 
     &--images,
     &--text {
       flex: 1 0 40%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding-right: rem(20);
+
+      @include breakpoint-down(small) {
+        padding: 0;
+      }
     }
 
     &--images {
@@ -60,7 +69,7 @@
     }
 
     &--text {
-      margin-bottom: rem(80);
+
 
       h2,
       h3 {
@@ -84,16 +93,19 @@
 
 .bioImage {
   margin-bottom: rem(20);
+  width: 100%;
+  overflow: hidden;
 }
 
 .bio__clientImages {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   flex-direction: row;
-  width: 95%;
+  width: 100%;
   padding: 0;
   overflow: hidden;
+  gap: rem(10);
 
   @include breakpoint-down(small) {
     width: 100%;
