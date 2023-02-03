@@ -39,23 +39,24 @@
     }
   }
 
-  // .overlay {
-  //   opacity: 0;
-  //   top: rem(90);
-  //   right: 0;
-  //   bottom: 0;
-  //   left: 0;
-  //   // background-color: var()
-  //   z-index: 999;
+  .overlay {
+    opacity: 0;
+    position: fixed;
+    top: rem(90);
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: var(--white);
+    z-index: 999;
 
-  //   @include breakpoint-up (medium) {
-  //     top: rem(110);
-  //   }
+    @include breakpoint-up (medium) {
+      top: rem(110);
+    }
 
-  //   @include breakpoint-down (small) {
-  //     position: absolute;
-  //   }
-  // }
+    @include breakpoint-down (small) {
+      position: absolute;
+    }
+  }
 
   &__logo {
     height: rem(83);
