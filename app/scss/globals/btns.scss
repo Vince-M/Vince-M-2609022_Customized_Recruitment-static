@@ -1,7 +1,26 @@
 @use '../util' as *;
 
 // BUTTONS
+.button {
+  text-align: center;
+  display: inline-block;
+  cursor: pointer;
+}
+
 .btn {
+  font-family: var(--font-heading);
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: rem(1);
+  padding: rem(8) rem(16);
+  border: 0;
+  border-radius: 0;
+  cursor: pointer;
+
+  &--lc {
+    text-transform: lowercase;
+    font-weight: 300;
+  }
 
   a {
     text-transform: uppercase;
@@ -21,6 +40,16 @@
     @include breakpoint-down(medium) {
       margin-left: 0;
     }
+  }
+
+  &__headerNav {
+    color: var(--darkGrey);
+    text-transform: uppercase;
+    text-decoration: none;
+    font-family: var(--font-heading);
+    font-size: rem(17);
+    font-weight: 500;
+    letter-spacing: rem(1);
   }
 
   &__contact a,

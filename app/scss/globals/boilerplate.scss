@@ -26,8 +26,8 @@ body {
   max-width: rem(1400);
   margin: 0 auto;
 
-  @include breakpoint-down(medium) {
-    width: 100%;
+  @include breakpoint-down(large) {
+    width: 90%;
     position: relative;
     // padding: 0 rem(20) 0 rem(20);
   }
@@ -280,3 +280,4 @@ a:hover {
     }
   }
 }
+
