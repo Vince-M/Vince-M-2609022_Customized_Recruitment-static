@@ -70,7 +70,6 @@
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    padding-right: rem(30);
 
     @include breakpoint-down(medium) {
       padding-right: rem(20);
