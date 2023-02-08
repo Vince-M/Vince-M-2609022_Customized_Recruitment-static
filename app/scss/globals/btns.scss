@@ -42,6 +42,10 @@
     }
   }
 
+  &__hero {
+    margin-top: rem(32);
+  }
+
   &__headerNav {
     color: var(--darkGrey);
     text-transform: uppercase;

@@ -7,6 +7,10 @@
   box-shadow: 0 0 rem(10) var(--black);
   z-index: 999;
 
+  @include breakpoint-down(medium) {
+    background-color: var(--white);
+  }
+
   // Hamburger Open Styles
   &.open {
 
@@ -79,10 +83,10 @@
     color: var(--darkGrey);
     text-transform: uppercase;
     font-weight: 400;
-    letter-spacing: rem(1);
+    letter-spacing: rem(.5);
     cursor: pointer;
     position: relative;
-    margin-left: rem(10);
+    margin-left: rem(16);
     transition: color .2s ease-out;
 
     @include breakpoint-down(medium) {
