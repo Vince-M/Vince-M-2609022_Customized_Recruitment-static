@@ -138,10 +138,14 @@
 .header {
 
   &__hero {
-    max-height: rem(300);
+    max-height: rem(400);
     overflow: hidden;
     position: relative;
     margin-bottom: rem(60);
+
+    @include breakpoint-down(small) {
+      margin-bottom: rem(40);
+    }
 
     &--image {
 
@@ -164,7 +168,7 @@
 
       @include breakpoint-down(medium) {
         bottom: rem(10);
-        left: rem(60);
+        left: rem(30);
       }
 
       @include breakpoint-down(small) {
@@ -184,10 +188,13 @@
 
         @include breakpoint-down(medium) {
           font-size: rem(42);
+          border-left: rem(5) solid var(--corpRed);
+          padding-left: rem(10);
         }
 
         @include breakpoint-down(small) {
           font-size: rem(28);
+          border-left: rem(3) solid var(--corpRed);
         }
       }
     }
