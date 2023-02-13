@@ -324,14 +324,15 @@
     &--image {
       background-image: url('../img/index_testimonials_1920x350.jpg');
       background-repeat: no-repeat;
-      background-position: center center;
+      background-position: top;
       width: 100%;
       height: rem(250);
       overflow: hidden;
-      display: flex;
-      justify-content: center;
-      align-items: flex-end;
+      // display: flex;
+      // justify-content: center;
+      // align-items: flex-end;
       margin-bottom: rem(40);
+      background-size: cover;
     }
 
     &--text {
