@@ -13,7 +13,14 @@
   }
 
   &__image {
-    margin-bottom: rem(80);
+    margin-bottom: rem(60);
+    max-height: rem(275);
+    vertical-align: top;
+    overflow: hidden;
+
+    @include breakpoint-down(small) {
+      margin-bottom: rem(30);
+    }
   }
 
 }
