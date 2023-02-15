@@ -68,3 +68,12 @@
   animation: fade-out 300ms ease-in-out forwards;
   display: none;
 }
+
+.fadeIn {
+  opacity: 0;
+  transition: opacity 350ms ease-in-out;
+}
+
+.fadeIn.appear {
+  opacity: 1;
+}
